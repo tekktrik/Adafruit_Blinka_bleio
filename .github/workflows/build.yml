@@ -51,7 +51,7 @@ jobs:
       uses: adafruit/circuitpython-action-library-ci-problem-matchers@v1
     - name: Try installing python3-virtualenv
       run: |
-        apt install python3-virtualenv
+        sudo apt-get install python3-virtualenv
     - name: Get python-venv version
       run: |
         dpkg -l python3-venv
