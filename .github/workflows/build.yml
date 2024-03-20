@@ -57,7 +57,7 @@ jobs:
         python -c "import sys;print(sys.executable)"
     - name: Pre-commit hooks
       run: |
-        pre-commit run --all-files
+        python -m pre_commit run --all-files
     - name: Build docs
       working-directory: docs
       run: sphinx-build -E -W -b html . _build/html
